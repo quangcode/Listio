@@ -1,0 +1,398 @@
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section{
+    padding: 90px 0px;
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1119px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .container{
+        max-width: 540px;
+    }
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* pc  */
+.p0{
+    flex: 0 0 0%;
+    max-width: 0%;
+}
+.p1{
+    flex: 0 0 8.3333%;
+    max-width: 8.3333%;
+}
+.p2{
+    flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+}
+.p3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.p4{
+    flex: 0 0 33.3333%;
+    max-width: 33.33333%;
+}
+.p5{
+    flex: 0 0 41.6667%;
+    max-width: 41.6667%;
+}
+.p6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.p8{
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+.p10{
+    flex: 0 0 83.3333%;
+    max-width: 83.33333%;
+}
+.p12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/*
+ mobile: m
+ tablet: t
+ pc p
+*/
+@media(max-width: 1180px){
+    .header-search{
+        width: 280px;
+    }
+    .search_infor-ip{
+        width: 200px;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .m0{
+        flex: 0 0 0%;
+        max-width: 0%;
+    }
+    .m5{
+        flex: 0 0 41.6667%;
+        max-width: 41.6667%;
+    }
+    .m6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .m12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .header-container.fixed{
+        position: relative;
+        background-color: none;
+    }
+    .header{
+        width: 87%;
+        padding: 0;
+        display: block;
+    }
+    .header-Menu_list{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+        top: 60px;
+    }
+    .header-search{
+        position: absolute;
+        top: 68px;
+    }
+    .header-logo{
+        position: absolute;
+        top: 23px;
+    }
+    .search_infor-ip{
+        width: 180px;
+    }
+    .destination h2{
+        font-size: 43px;
+        line-height: 60px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    /* help find */
+    .helpFind i{
+        display: none;
+    }
+    .helpFind-title_column h2{
+        font-size: 27px;
+    }
+    /* best cafe and bars */
+    .bestCoffeeAndBars-title{
+        width: 100%;
+    }
+    .bestCoffeeAndBars-title h2 {
+        font-size: 29px;
+    }
+    /* featuredListing */
+    .featuredListing{
+        width: 90%;
+    }
+    .featuredListing-title h2{
+        font-size: 27px;
+    }
+    /* howListioWork */
+    
+    .listioWork_title{
+        height: 110px;
+    }
+    .listioWork_title h2{
+        font-size: 27px;
+    }
+    .listioWork_item {
+        padding-bottom: 40px;
+    }
+    /* exploreCategories */
+    .exploreCategories-tilte h2{
+        font-size: 27px;
+    }
+    .exploreCategories-slideshow{
+        width: 98%;
+    }
+    .exploreCategories-slide-content{
+        padding: 20px 20px;
+        text-align: justify;
+    }
+    .exploreCategories_btn{
+        display: none;
+    }
+    /* inTouch */
+    .inTouch_content-title h2{
+        font-size: 27px;
+    }
+    .inTouch-background{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    /* latest news */
+    .latestNews-content-location{
+        margin-bottom: 30px;
+    }
+    .location-details_tips p{
+        font-size: 19px;
+    }
+    .tips-word{
+        font-size: 16px;
+        color: #CCCCCC;
+    }
+    .location-details{
+        left: 5%;
+    }
+    .col{
+        margin-bottom: 15px;
+    }
+    .section{
+        padding: 60px 0;
+    }
+}
+
+/* tablet */
+@media (min-width: 739px ) and (max-width: 1023px){
+    .header-Menu_list{
+        display: none;
+    }
+    .header{
+        width: 87%;
+        padding: 0;
+        justify-content: flex-start;
+    }
+    .header-mobile{
+        display: block;
+    }
+    .destination-select-category{
+        width: 50%;
+        float: left;
+    }
+    .destination-select-city{
+        width: 50%;
+        float: right;
+    }
+    .destination-search{
+        height: 120px;
+    }
+    .slides{
+        width: 333.3333%;
+    }
+    .slide{
+        width: 33.3333%;
+    }
+    /* best cafe and bars */
+    .bestCoffeeAndBars-title{
+        width: 76%;
+    }
+    .bestCoffeeAndBars-title h2{
+        font-size: 30px;
+    }
+    /* exploreCategories-slideshow */
+    .exploreCategories-slideshow{
+        width: 90%;
+    }
+    /* latest news */
+    .tips-word{
+        font-size: 22px;
+        color: #CCCCCC;
+    }
+    /* footer */
+    .footer_section3{
+        margin-top: 15px;
+    }
+    .t0{
+        flex: 0 0 0%;
+        max-width: 0%;
+    }
+    .t1{
+        flex: 0 0 8.3333%;
+        max-width: 8.3333%;
+    }
+    .t2{
+        flex: 0 0 16.6667%;
+        max-width: 16.6667%;
+    }
+    .t3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .t4{
+        flex: 0 0 33.3333%;
+        max-width: 33.33333%;
+    }
+    .t5{
+        flex: 0 0 41.6667%;
+        max-width: 41.6667%;
+    }
+    .t6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .t8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .t10{
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .t11{
+        flex: 0 0 91.6667%;
+        max-width: 91.6667%;
+    }
+    .t12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .col{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+/* mobile and tablet */
+
+@media (max-width: 1023px){
+    .content{
+        padding-top: 100px;
+    }
+    .bestCoffeeAndBars{
+        display: block;
+    }
+    .bestCoffeeAndBars-img{
+        width: 100%;
+    }
+    .bestCoffeeAndBars-img img{
+        width: 100%;
+        height: 400px;
+    }
+    .bestCoffeeAndBars-title{
+        padding: 50px 30px;
+    }
+    /* back-top */
+    .back-top{
+        width: 40px;
+        height: 40px;
+    }
+    .back-top i{
+        line-height: 40px;
+    }
+    /* ỉnTouch */
+    .inTouch-background{
+        background-position: right;
+    }
+    .inTouch-row{
+        justify-content: flex-start;
+    }
+    
+}
+/* small tablet */
+@media (min-width: 600px) and (max-width: 800px){
+    .st5{
+        flex: 0 0 41.6667%;
+        max-width: 41.6667%;
+    }
+    .st12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 1366px){
+    .slide_link{
+        font-size: 20px;
+    }
+    .slide p{
+        font-size: 16px;
+    }
+}
+/* ipad pro */
+@media (min-width: 1024px ) and (max-width: 1366px){
+    /* caffee and bars */
+    .bestCoffeeAndBars-title{
+        padding: 20px 20px 20px 50px;
+    }
+    h2{
+        font-size: 39px;
+    }
+}

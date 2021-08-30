@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <div class="body-web">
+        <div class="background-destination">
+            <div class="header-container">
+                <div class="header">
+                    <div class="header-search">
+                        <div class="header-search_logo"><i class="fas fa-search"></i></div>
+                        <div class="header-search_infor"><input type="text" class="search_infor-ip" placeholder="What are you finding?" ></div>
+                    </div>
+                    <div class="header-logo">
+                        <a href="index.html"><img src="data:image/webp;base64,UklGRmYCAABXRUJQVlA4TFoCAAAviQAJED+hpm0kKcsf2I/kAFx3O+1BmH9FkaRGA/7l8aSQQe6smkiSonuJMIUejOGMkL2Qn2CSptqOAaT6IMD/egDwQQAAlByj6nXS0c1Ff3TWN9GEirG8/AsHsmzbbdsKV1Rzh2xFtMjk9TL/KcpgASX5O6L/ENxIUiS5NhcOc3jewFRg/v6hfQwKPP79/r8XYH1+7QdYnT0Ba5MyH5bZLrAqaRYANgysyP6As1OSf1KheXotcGZKGg0aR5kzP59PH3ZoYEYtcFaKMgDOlDk9ABt0OANo1MAZKasCcC2l1gMnU5it0PoSfIvKFgDOSdFf80Ra6npIPKJZAZVChYAj2Q+XDRxkBeMwDMHSuIsB0N1EDTsMDYDLUsuKGuIfBAVvBq+GHz4LWKQA1Qq3BsGMSwtOrV2O7ntDpFEzZwGLrMm/UvUtAKd0QHSmLJ8/f63sDqD2RO7IYm/p+wpA2/f9mMB4Fbzb6QwAxmX4/PFrbWcAV8WPRDhELgZWVsjJ6q4AjNUTBSofK2N8RtY3QhyHD6fVRw8Z8bM2nfWJBmIuXsfET241gDEjG+CPkGOcCoRoac7IBhC5ay0W5KjSAhjD0o34kMgGRNq1op7GEcApvigunq2Qu+WsJnbHSZbpAPSUSCnpsYnFnOVd6QSgVqEKgHkQkevkyohlK3wDdMNDXFNZZ5alDw2Cc2sk29FG+rReh8YqVv28VIxlMx88V5GlUiJ3DFeV+HdBSvI2PV5sZFEgWEnMPDrRNF3JLR1ijfy0NLzPskQQtX1MJG+AyJsg8iZ8fSsx32kXQw==" alt="" data-pagespeed-url-hash="636903054"></a>
+                    </div>
+                    <div class="header-Menu">
+                        <ul class="header-Menu_list">
+                        <li class="list-item"><a href="index.html" class="list-item_link">Home</a></li>
+                        <li class="list-item"><a href="#" class="list-item_link">Explore</a></li>
+                        <li class="list-item"><a href="#" class="list-item_link">Pages</a>
+                            <ul class="list-item_small">
+                                <li class="item_small"><a href="#" class="item_small-link">Blog</a></li>
+                                <li class="item_small"><a href="#" class="item_small-link">Blog Details</a></li>
+                                <li class="item_small"><a href="#" class="item_small-link">Elemment</a></li>
+                                <li class="item_small"><a href="#" class="item_small-link">Contact</a></li>
+                                <li class="item_small"><a href="#" class="item_small-link">Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-item"><a href="#" class="list-item_link">Add Listing</a></li>
+                        <li class="list-item"><a href="#" class="list-item_link">My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-mobile">
+                        <div class="mobile-menu-btn">
+                            <div class="menu-btn">MENU <i class="fas fa-bars"></i></div>
+                        </div>
+                        <ul class="mobile-menu-list">
+                        <li class="mobile-item"><a href="index.html" class="mobile-item_link">Home</a></li>
+                        <li class="mobile-item"><a href="#explore.html" class="mobile-item_link">Explore</a></li>
+                        <li class="mobile-item">
+                        <a href="#pages" class="mobile-item_link">
+                            <span>Pages</span>
+                            <div class="pages-value-1 display" id="page-value1">+</div>
+                            <div class="pages-value-2" id="page-value2">-</div>
+                        </a>
+                            <ul class="mobile-list_small">
+                                <li class="mobile-small-item"><a href="#" class="mobile-small-item-link">Blog</a></li>
+                                <li class="mobile-small-item"><a href="#" class="mobile-small-item-link">Blog Details</a></li>
+                                <li class="mobile-small-item"><a href="#" class="mobile-small-item-link">Elemment</a></li>
+                                <li class="mobile-small-item"><a href="#" class="mobile-small-item-link">Contact</a></li>
+                                <li class="mobile-small-item"><a href="#" class="mobile-small-item-link">Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-item"><a href="#" class="mobile-item_link">Add Listing</a></li>
+                        <li class="mobile-item"><a href="#" class="mobile-item_link">My Account</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="content">
+            <div class="row">
+                <div class="destination col p5 t12 m12">
+                    <h2>Find your<br> Destination</h2>
+                   <div class="form-destination">
+                    <input type="text" class="destination-ip" placeholder="What Are You Finding?">
+                    <div class="destination-select-category">
+                        <div class="select-category">
+                            <span>Select Category</span> <i class="fas fa-angle-down"></i>
+                            <ul class="category-list">
+                                <li class="category-list_item selected" >Select Category</li>
+                                <li class="category-list_item">Topic One</li>
+                                <li class="category-list_item">Topic Two</li>
+                                <li class="category-list_item">Topic Three</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="destination-select-city">
+                        <div class="select-city">
+                            <span>Select City</span> <i class="fas fa-angle-down"></i>
+                            <ul class="city-list">
+                                <li class="city-list_item selected">Select City</li>
+                                <li class="city-list_item">Topic One</li>
+                                <li class="city-list_item">Topic Two</li>
+                                <li class="city-list_item">Topic Three</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="destination-search">
+                        <button class="destination-search-btn">Search Destination</button>
+                    </div>
+                   </div>
+               </div>
+           </div>
+           </div>
+        </div>
+        <div class="helpFind">
+            <div class="helpFind-title row">
+                <div class="helpFind-title_column col p10 t12 m12">
+                    <h2>We Help You To Find</h2>
+                    <p>Explore Categories</p>
+                </div>
+            </div>
+            <div class="slickslider">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices2.png.pagespeed.ic.dylNx_lTsh.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Hotel</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices1.png.pagespeed.ic.nf-reXWfQS.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Hotel</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices2.png.pagespeed.ic.dylNx_lTsh.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Restaurant</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices3.png.pagespeed.ic.Jhr4HrNPIW.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Cafe</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices4.png.pagespeed.ic.Z9M1yasmqu.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Shopping Mall</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices2.png.pagespeed.ic.dylNx_lTsh.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Hotel</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices1.png.pagespeed.ic.nf-reXWfQS.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Hotel</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices2.png.pagespeed.ic.dylNx_lTsh.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Restaurant</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices3.png.pagespeed.ic.Jhr4HrNPIW.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Cafe</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xservices4.png.pagespeed.ic.Z9M1yasmqu.webp">
+                        <div class="slide_link-container"><a href="#" class="slide_link">Shopping Mall</a></div>
+                        <p>20 Listing</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <div class="prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="back-top">
+            <a href="#" class="back-top_link">
+                <i class="fas fa-level-up-alt"></i>
+            </a>
+        </div>
+        <div class="bestCoffeeAndBars">
+            <div class="bestCoffeeAndBars-img"></div>
+            <div class="bestCoffeeAndBars-title">
+                <h2>Best Café & Bars</h2>
+                <p>Discover & connect with great local businesses in your local neighborhood like dentists, hair stylists and more.</p>
+                <a href="#">Explore Now</a>
+            </div>
+        </div>
+        <div class="featuredListing">
+            <div class="featuredListing-title">
+                <h2>Featured Listing</h2>
+                <p class="featuredListing-title_p">Explore Categories</p>
+            </div>
+            <div class="featuredListing-content row">
+                <div class="featuredListing_item col p4 t6 m12">
+                    <div class="item-content">
+                        <div class="featuredListing_item-background">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xproperties1.png.pagespeed.ic.0QRLy4b9EB.webp">
+                        </div>
+                        <div class="featuredListing_item-span">
+                            <span>$$$</span>
+                            <span>Closed</span>
+                        </div>
+                        <div class="featuredListing_item-icon">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xcategori_icon1.png.pagespeed.ic.5zmSFFD72Z.webp">
+                        </div>
+                        <div class="featuredListing_item-caption">
+                            <a href="#">Urban areas</a>
+                            <p>Let's uncover the best places to eat, drink</p>
+                        </div>
+                        <div class="featuredListing_item-footer">
+                            <div class="item-footer_title">
+                                <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xrestaurant-icon.png.pagespeed.ic.5iBhPjrs6I.webp">
+                                <h3>Food & Restaurant</h3>
+                            </div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredListing_item col p4 t6 m12">
+                    <div class="item-content">
+                        <div class="featuredListing_item-background">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xproperties2.png.pagespeed.ic.st34IHDViO.webpp">
+                        </div>
+                        <div class="featuredListing_item-span">
+                            <span>$$$</span>
+                            <span>Closed</span>
+                        </div>
+                        <div class="featuredListing_item-icon">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xcategori_icon2.png.pagespeed.ic.upDo9XZwXK.webp">
+                        </div>
+                        <div class="featuredListing_item-caption">
+                            <a href="#">Urban areas</a>
+                            <p>Let's uncover the best places to eat, drink</p>
+                        </div>
+                        <div class="featuredListing_item-footer">
+                            <div class="item-footer_title">
+                                <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xrestaurant-icon.png.pagespeed.ic.5iBhPjrs6I.webp">
+                                <h3>Food & Restaurant</h3>
+                            </div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredListing_item col p4 t6 m12">
+                    <div class="item-content">
+                        <div class="featuredListing_item-background">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xproperties3.png.pagespeed.ic.Hnlv7E_fzB.webp">
+                        </div>
+                        <div class="featuredListing_item-span">
+                            <span>$$$</span>
+                            <span class="item-span_open">Open Now</span>
+                        </div>
+                        <div class="featuredListing_item-icon">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xcategori_icon3.png.pagespeed.ic.CQ_mTiutiZ.webp">
+                        </div>
+                        <div class="featuredListing_item-caption">
+                            <a href="#">Urban areas</a>
+                            <p>Let's uncover the best places to eat, drink</p>
+                        </div>
+                        <div class="featuredListing_item-footer">
+                            <div class="item-footer_title">
+                                <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xrestaurant-icon.png.pagespeed.ic.5iBhPjrs6I.webp">
+                                <h3>Food & Restaurant</h3>
+                            </div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredListing_item col p4 t6 m12">
+                    <div class="item-content">
+                        <div class="featuredListing_item-background">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xproperties4.png.pagespeed.ic.w-y8n5S4l1.webp">
+                        </div>
+                        <div class="featuredListing_item-span">
+                            <span>$$$</span>
+                            <span>Closed</span>
+                        </div>
+                        <div class="featuredListing_item-icon">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xcategori_icon1.png.pagespeed.ic.5zmSFFD72Z.webp">
+                        </div>
+                        <div class="featuredListing_item-caption">
+                            <a href="#">Urban areas</a>
+                            <p>Let's uncover the best places to eat, drink</p>
+                        </div>
+                        <div class="featuredListing_item-footer">
+                            <div class="item-footer_title">
+                                <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xrestaurant-icon.png.pagespeed.ic.5iBhPjrs6I.webp">
+                                <h3>Food & Restaurant</h3>
+                            </div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredListing_item col p4 t6 m12">
+                    <div class="item-content">
+                        <div class="featuredListing_item-background">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xproperties5.png.pagespeed.ic.idU2Z28W7x.webp">
+                        </div>
+                        <div class="featuredListing_item-span">
+                            <span>$$$</span>
+                            <span>Closed</span>
+                        </div>
+                        <div class="featuredListing_item-icon">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xcategori_icon5.png.pagespeed.ic.RDoq3kYrcl.webp">
+                        </div>
+                        <div class="featuredListing_item-caption">
+                            <a href="#">Urban areas</a>
+                            <p>Let's uncover the best places to eat, drink</p>
+                        </div>
+                        <div class="featuredListing_item-footer">
+                            <div class="item-footer_title">
+                                <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xrestaurant-icon.png.pagespeed.ic.5iBhPjrs6I.webp">
+                                <h3>Food & Restaurant</h3>
+                            </div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredListing_item col p4 t6 m12">
+                    <div class="item-content">
+                        <div class="featuredListing_item-background">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xproperties6.png.pagespeed.ic.WY-GJpKrvq.webp">
+                        </div>
+                        <div class="featuredListing_item-span">
+                            <span>$$$</span>
+                            <span class="item-span_open">Open Now</span>
+                        </div>
+                        <div class="featuredListing_item-icon">
+                            <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xcategori_icon6.png.pagespeed.ic.CQ_mTiutiZ.webp">
+                        </div>
+                        <div class="featuredListing_item-caption">
+                            <a href="#">Urban areas</a>
+                            <p>Let's uncover the best places to eat, drink</p>
+                        </div>
+                        <div class="featuredListing_item-footer">
+                            <div class="item-footer_title">
+                                <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xrestaurant-icon.png.pagespeed.ic.5iBhPjrs6I.webp">
+                                <h3>Food & Restaurant</h3>
+                            </div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="featuredListing-exploreMore">
+                <a href="#" class="featuredListing-btn">Explore More</a>
+            </div>
+        </div>
+        <div class="howListioWork">
+            <div class="howListioWork-background">
+                <div class="listioWork">
+                    <div class="listioWork_title">
+                        <h2>How Listio Work</h2>
+                        <p>Explore Our Process</p>
+                    </div>
+                    <div class="listioWork_content">
+                        <div class="listWork_content-list row">
+                            <div class="listioWork_item col p4 t6 m12">
+                                <div class="listioWork_item-number">01</div>
+                                <a href="#"  class="listioWork_item-link">Find Businesses</a>
+                                <p>Discover & connect with great local businesses in your local neighborhood like dentists, hair stylists and more.</p>
+                            </div>
+                            <div class="listioWork_item col p4 t6 m12">
+                                <div class="listioWork_item-number">02</div>
+                                <a href="#"  class="listioWork_item-link">Review Listings</a>
+                                <p>Discover & connect with great local businesses in your local neighborhood like dentists, hair stylists and more.</p>
+                            </div>
+                            <div class="listioWork_item col p4 t6 m12">
+                                <div class="listioWork_item-number">03</div>
+                                <a href="#"  class="listioWork_item-link">Make a Reservation</a>
+                                <p>Discover & connect with great local businesses in your local neighborhood like dentists, hair stylists and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exploreCategories">
+            <div class="exploreCategories-tilte">
+                <h2>Featured Listing</h2>
+                <p>Explore Categories</p>
+            </div>
+            <div class="exploreCategories-slideshow">
+                <div class="exploreCategories_slider">
+                        <div class="exploreCategories-slide">
+                            <div class="exploreCategories-slide-content">
+                                <p>Brook presents your services with flexible, convenient and cdpose layouts. 
+                                    You can select your favorite layouts &amp; 
+                                    elements for cular ts with unlimited ustomization possibilities
+                                . Pixel-perfect replica;ition of thei designers ijtls intended csents your se.
+                                </p>
+                                <div class="exploreCategories-author">
+                                    <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xtestimonial.png.pagespeed.ic.e1BcsjIiek.webp"/>
+                                    <div class="author_name">
+                                        <span>Jacson Miller</span>
+                                        <p>Designer @Colorlib</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exploreCategories-slide">
+                            <div class="exploreCategories-slide-content">
+                                <p>Brook presents your services with flexible, convenient and cdpose layouts. 
+                                    You can select your favorite layouts &amp; 
+                                    elements for cular ts with unlimited ustomization possibilities
+                                . Pixel-perfect replica;ition of thei designers ijtls intended csents your se.
+                                </p>
+                                <div class="exploreCategories-author">
+                                    <img src="https://preview.colorlib.com/theme/listio/assets/img/icon/xtestimonial.png.pagespeed.ic.e1BcsjIiek.webp"/>
+                                    <div class="author_name">
+                                        <span>Jacson Miller</span>
+                                        <p>Designer @Colorlib</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="exploreCategories_btn">
+                    <div class="prev_Categories"><i class="fas fa-chevron-left"></i></div>
+                    <div class="next_Categories"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="inTouch">
+            <div class="inTouch-background">
+                <div class="inTouch-background_container ">
+                    <div class="inTouch-row row">
+                        <div class="inTouch_content col p5 t8 m12">
+                            <div class="inTouch_content-title">
+                                <h2>Let’s Stay In Touch</h2>
+                                <p>Join Listio’s newsletter, so that we reach out to<br>
+                                    you with our best news and offers.</p>
+                            </div>
+                            <div class="inTouch_content-subscribe">
+                                <input type="text" placeholder="Enter your email">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latestNews">
+           <div class="section">
+               <div class="container">
+                <div class="latestNews-title">
+                    <h2>Latest News</h2>
+                    <p>Explore Blog Post</p>
+                </div>
+                <div class="latestNews-content row">
+                    <div class="latestNews-content-location col p6 t6 m12">
+                        <div class="location_img-content">
+                            <div class="location-img"><img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xhome-blog1.png.pagespeed.ic.9B_oXvgcDM.webp"></div>
+                        </div>
+                        <div class="location-details">
+                            <div class="location-details_tips">
+                                <a href="#">Tips</a>
+                                <p>12 March I by Alan</p>
+                            </div>
+                            <p class="tips-word">The Best SPA Salons For Your Relaxation</p>
+                        </div>
+                    </div>
+                    <div class="latestNews-content-location col p6 t6 m12">
+                        <div class="location_img-content">
+                            <div class="location-img"><img src="https://preview.colorlib.com/theme/listio/assets/img/gallery/xhome-blog2.png.pagespeed.ic.aGXmvDaHBi.webp"></div>
+                        </div>
+                        <div class="location-details">
+                            <div class="location-details_tips">
+                                <a href="#">Tips</a>
+                                <p>12 March I by Alan</p>
+                            </div>
+                            <p class="tips-word">The Best SPA Salons For Your Relaxation</p>
+                        </div>
+    
+                    </div>
+                </div>
+               </div>
+           </div>
+        </div>
+        <div class="footer">
+                <div class="section">
+                    <div class="container">
+                        <div class="row footer_row">
+                            <div class="col p5 t6 st12 m12 footer_section1">
+                                <div class="footer-logo">
+                                    <img src="https://preview.colorlib.com/theme/listio/assets/img/logo/logo2_footer.png">
+                                </div>
+                                <p class="footer-description">Users and submit their own items. You can create different packages and by connecting with your PayPal or Stripe account charge users for registration.</p>
+                                <div class="footer-socialNetworking">
+                                    <a href="#" class="footer-socialNetworking_link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="footer-socialNetworking_link"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="footer-socialNetworking_link"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="footer-socialNetworking_link">in</a>
+                                </div>
+                            </div>
+                            <div class="col p3 t6 st5 m12 footer_section2">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">Listing</a></li>
+                                    <li><a href="#">Submit your Business</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Cities</a></li>
+                                </ul>
+                            </div>
+                            <div class="col p2 t6 st5 m12 footer_section3">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Insights</a></li>
+                                    <li><a href="#">User Stories</a></li>
+                                    <li><a href="#">Carrier</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col p12">
+                                <p>Copyright ©<script>document.write(new Date().getFullYear());</script>
+                                    2021 All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by 
+                                    <a href="https://colorlib.com">Colorlib</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="preloader-active" style="display: block;">
+        <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+        <img src="data:image/webp;base64,UklGRuAAAABXRUJQVlA4TNMAAAAvJAAJEHdgpm2bZAC2a/yhhoaiSFLjaHP8MIAf8o6aAEgYwHGaYfTviKJIUhxe2RdmEEHhBmcY4HkhAAA+UPsu7zacxtnp/z+2DsUrEuzxJiw4cFTbbtz0ZFp1EgRBEJcWifBk7eavCiWcYv8vCBH9V5i2DaMO/zLd5Pzvru1PkzmPp7ksnmaT6sVVLzaJdly0YxPryFlHNpESTkrYREo4KWFTV8G7Cjadh+Y7tPgVJLRoBQmOlCAlxmoJLVpBQotWkNCiFSS0aAUJrVA8EwWfr54NAA==">
+        </div>
+        </div>
+        </div>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="./js.js"></script>
+</body>
+</html>
